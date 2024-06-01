@@ -922,7 +922,7 @@ const metadataLenghtsByIsoCode = {
   ),
   IsoCode.MX: PhoneMetadataLengths(
     general: [],
-    mobile: [10, 11],
+    mobile: [10],
     fixedLine: [10],
     voip: [],
   ),
