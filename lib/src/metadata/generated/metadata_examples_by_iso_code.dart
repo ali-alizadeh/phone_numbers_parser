@@ -145,7 +145,7 @@ const metadataExamplesByIsoCode = {
   IsoCode.BO: PhoneMetadataExamples(
     fixedLine: r"22123456",
     mobile: r"71234567",
-    voip: r"",
+    voip: r"50123456",
   ),
   IsoCode.BQ: PhoneMetadataExamples(
     fixedLine: r"7151234",

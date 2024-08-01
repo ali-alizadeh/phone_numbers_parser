@@ -174,7 +174,7 @@ const metadataLenghtsByIsoCode = {
     general: [],
     mobile: [8],
     fixedLine: [8],
-    voip: [],
+    voip: [8],
   ),
   IsoCode.BQ: PhoneMetadataLengths(
     general: [],
@@ -736,7 +736,7 @@ const metadataLenghtsByIsoCode = {
   ),
   IsoCode.LA: PhoneMetadataLengths(
     general: [],
-    mobile: [9, 10],
+    mobile: [10],
     fixedLine: [8],
     voip: [],
   ),
