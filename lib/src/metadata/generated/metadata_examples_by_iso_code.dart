@@ -803,7 +803,7 @@ const metadataExamplesByIsoCode = {
     voip: r"",
   ),
   IsoCode.NG: PhoneMetadataExamples(
-    fixedLine: r"18040123",
+    fixedLine: r"2033123456",
     mobile: r"8021234567",
     voip: r"",
   ),
