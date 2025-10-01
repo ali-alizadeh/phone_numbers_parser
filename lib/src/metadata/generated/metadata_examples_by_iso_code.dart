@@ -684,7 +684,7 @@ const metadataExamplesByIsoCode = {
   ),
   IsoCode.ME: PhoneMetadataExamples(
     fixedLine: r"30234567",
-    mobile: r"67622901",
+    mobile: r"60123456",
     voip: r"78108780",
   ),
   IsoCode.MF: PhoneMetadataExamples(

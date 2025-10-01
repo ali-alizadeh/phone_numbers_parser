@@ -1347,6 +1347,13 @@ const metadataFormatsByIsoCode = <IsoCode, PhoneMetadataFormats>{
       intlFormat: null,
     ),
     PhoneMetadataFormat(
+      pattern: r"(\d{6})",
+      nationalPrefixFormattingRule: null,
+      leadingDigits: ["227", "2277"],
+      format: r"$1",
+      intlFormat: r"NA",
+    ),
+    PhoneMetadataFormat(
       pattern: r"(\d{3})(\d{3,12})",
       nationalPrefixFormattingRule: r"$NP$FG",
       leadingDigits: [
@@ -2676,7 +2683,7 @@ const metadataFormatsByIsoCode = <IsoCode, PhoneMetadataFormats>{
     PhoneMetadataFormat(
       pattern: r"(\d{3})(\d{4})(\d{4,5})",
       nationalPrefixFormattingRule: null,
-      leadingDigits: ["3"],
+      leadingDigits: ["[03]"],
       format: r"$1 $2 $3",
       intlFormat: null,
     )
@@ -3252,7 +3259,7 @@ const metadataFormatsByIsoCode = <IsoCode, PhoneMetadataFormats>{
     PhoneMetadataFormat(
       pattern: r"(\d{2})(\d{3})(\d{3})",
       nationalPrefixFormattingRule: null,
-      leadingDigits: ["[269]|8[01]"],
+      leadingDigits: ["[2679]|8[01]"],
       format: r"$1 $2 $3",
       intlFormat: null,
     )
