@@ -187,7 +187,7 @@ const metadataPatternsByIsoCode = {
     general: r"[024-7]\d{7}",
     mobile: r"(?:0[1-7]|4[4-6]|5[0-8]|[67]\d)\d{6}",
     fixedLine:
-        r"2(?:0(?:49|5[23]|6[5-7]|9[016-9])|4(?:4[569]|5[4-6]|6[5-7]|7[0179])|5(?:[34]\d|50|6[5-7]))\d{4}",
+        r"2(?:0(?:49|5[23]|6[5-7]|9[016-9])|4(?:4[569]|5[4-6]|6[5-7]|7[0179])|5(?:[34]\d|50|6[5-8]))\d{4}",
     voip: r"",
   ),
   IsoCode.BG: PhoneMetadataPatterns(
@@ -543,7 +543,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"(?:[1-4]|[5-79]\d|80)\d{7}",
-    mobile: r"5(?:4[0-29]|6[0-3])\d{6}|(?:55|6\d|7[7-9])\d{7}",
+    mobile: r"5(?:4[0-29]|6[0-4])\d{6}|(?:55|6\d|7[7-9])\d{7}",
     fixedLine: r"9619\d{5}|(?:[1-3]\d|4[013-689])\d{6}",
     voip: r"98[23]\d{6}",
   ),
@@ -991,7 +991,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: r"(000[2569]\d{4,6})$|(?:(?:003768)0?)|0",
     nationalPrefixTransformRule: r"$1",
     general: r"00[1-9]\d{6,14}|[25-9]\d{9}|(?:00|[1-9]\d\d)\d{6}",
-    mobile: r"(?:601[0-4]0|[7-9]0[1-9]\d\d)\d{5}",
+    mobile: r"[6-9]0[1-9]\d{7}",
     fixedLine:
         r"(?:1(?:1[235-8]|2[3-6]|3[3-9]|4[2-6]|[58][2-8]|6[2-7]|7[2-9]|9[1-9])|(?:2[2-9]|[36][1-9])\d|4(?:[2-578]\d|6[02-8]|9[2-59])|5(?:[2-589]\d|6[1-9]|7[2-8])|7(?:[25-9]\d|3[4-9]|4[02-9])|8(?:[2679]\d|3[2-9]|4[5-9]|5[1-9]|8[03-9])|9(?:[2-58]\d|[679][1-9]))\d{6}",
     voip: r"50[1-9]\d{7}",
@@ -1000,7 +1000,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"(?:[17]\d\d|900)\d{6}|(?:2|80)0\d{6,7}|[4-6]\d{6,8}",
-    mobile: r"(?:1(?:0[0-8]|1\d|2[014]|30|4[0-3])|7\d\d)\d{6}",
+    mobile: r"(?:1(?:0[0-8]|1\d|2[014]|30|4[0-5])|7\d\d)\d{6}",
     fixedLine:
         r"(?:4[245]|5[1-79]|6[01457-9])\d{5,7}|(?:4[136]|5[08]|62)\d{7}|(?:[24]0|66)\d{6,7}",
     voip: r"",
@@ -1211,7 +1211,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"(?:[3489]|[67]\d)\d{7}",
-    mobile: r"4(?:[469]\d|5[1-9])\d{5}|(?:3|[67]\d)\d{7}",
+    mobile: r"4(?:[46]\d|5[1-9])\d{5}|(?:3|[67]\d)\d{7}",
     fixedLine: r"(?:870|9[2-47-9]\d)\d{5}",
     voip: r"",
   ),
@@ -1373,8 +1373,8 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"(?:[1289]\d|31|77)\d{7}|1\d{6}",
-    mobile: r"111\d{6}|(?:31|77|[89][89])\d{7}",
-    fixedLine: r"(?:1[2-9]|2[12]\d\d)\d{5}",
+    mobile: r"111\d{6}|(?:2[12]|31|77|[89][89])\d{7}",
+    fixedLine: r"1[2-9]\d{5}",
     voip: r"",
   ),
   IsoCode.MX: PhoneMetadataPatterns(
@@ -1472,8 +1472,8 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"(?:0|[2-9]\d{3})\d{4}",
-    mobile: r"(?:4[015-8]|9\d)\d{6}",
-    fixedLine: r"(?:2[1-4]|3[1-3578]|5[1-35-7]|6[1-4679]|7[0-8])\d{6}",
+    mobile: r"[49]\d{7}",
+    fixedLine: r"(?:2[1-4]|3[1-3578]|5[1-35-7]|6[1-46-9]|7[0-8])\d{6}",
     voip: r"85[0-5]\d{5}",
   ),
   IsoCode.NP: PhoneMetadataPatterns(
@@ -1734,7 +1734,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"(?:(?:1\d|8)\d\d|7000)\d{7}|[3689]\d{7}",
-    mobile: r"898[02-9]\d{4}|(?:8(?:0[1-9]|[1-8]\d|9[0-79])|9[0-8]\d)\d{5}",
+    mobile: r"80[1-9]\d{5}|(?:8[1-9]|9[0-8])\d{6}",
     fixedLine: r"662[0-24-9]\d{4}|6(?:[0-578]\d|6[013-57-9]|9[0-35-9])\d{5}",
     voip: r"(?:3[12]\d|666)\d{5}",
   ),
@@ -1751,7 +1751,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixTransformRule: null,
     general: r"[1-7]\d{7}|8\d{4,7}|90\d{4,6}",
     mobile:
-        r"65(?:[178]\d|5[56]|6[01])\d{4}|(?:[37][01]|4[0139]|51|6[489])\d{6}",
+        r"65(?:[178]\d|5[56]|6[01])\d{4}|(?:[37][01]|4[013]|51|6[489])\d{6}",
     fixedLine: r"(?:[1-357][2-8]|4[24-8])\d{6}",
     voip:
         r"(?:59\d\d|8(?:1(?:[67]\d|8[0-589])|2(?:0\d|2[0-37-9]|8[0-2489])|3[389]\d))\d{4}",
@@ -1760,7 +1760,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"0\d{4}|(?:[489]\d|79)\d{6}",
-    mobile: r"(?:4[015-8]|9\d)\d{6}",
+    mobile: r"[49]\d{7}",
     fixedLine: r"79\d{6}",
     voip: r"85[0-5]\d{5}",
   ),
@@ -1802,7 +1802,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixTransformRule: null,
     general: r"[346-9]\d{8}|[12679]\d{7}|[1-5]\d{6}|[1348]\d{5}",
     mobile:
-        r"(?:(?:15|(?:3[59]|4[89]|6\d|7[679]|8[08])\d|9(?:0\d|[2-9]))\d|2(?:4\d|8))\d{5}|(?:[67]\d\d|904)\d{5}",
+        r"(?:(?:15|(?:3[59]|4[89]|6\d|7[0-35-9]|8[08])\d|9(?:0\d|[2-9]))\d|2(?:4\d|8))\d{5}|(?:[67]\d\d|904)\d{5}",
     fixedLine:
         r"(?:1\d|2[0-79]|3[0-46-8]|4[0-7]|5[57-9])\d{5}|(?:[134]\d|8[125])\d{4}",
     voip: r"",
@@ -2016,7 +2016,7 @@ const metadataPatternsByIsoCode = {
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
     general: r"800\d{6}|(?:[29]0|[347]\d)\d{7}",
-    mobile: r"72[48]0\d{5}|7(?:[014-8]\d|2[0167]|3[06]|9[0-589])\d{6}",
+    mobile: r"7280\d{5}|7(?:[014-8]\d|2[01467]|3[016]|9[0-589])\d{6}",
     fixedLine:
         r"20(?:(?:240|30[67])\d|6(?:00[0-2]|30[0-4]))\d{3}|(?:20(?:[017]\d|2[5-9]|3[1-4]|5[0-4]|6[15-9])|[34]\d{3})\d{5}",
     voip: r"",
@@ -2097,7 +2097,7 @@ const metadataPatternsByIsoCode = {
   IsoCode.VN: PhoneMetadataPatterns(
     nationalPrefixForParsing: null,
     nationalPrefixTransformRule: null,
-    general: r"[12]\d{9}|[135-9]\d{8}|[16]\d{7}|[16-8]\d{6}",
+    general: r"[12]\d{9}|[135-9]\d{8}|[16]\d{6,7}|7\d{6}",
     mobile:
         r"121[0-3]\d{5}|(?:160|(?:3\d|7[06-9])\d|5(?:[1689]\d|2[238]|59)|8(?:[1-8]\d|9[6-9])|9(?:[0-8]\d|9[013-9]))\d{6}",
     fixedLine:
