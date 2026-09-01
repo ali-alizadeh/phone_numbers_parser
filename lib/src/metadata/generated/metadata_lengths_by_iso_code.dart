@@ -502,8 +502,8 @@ const metadataLenghtsByIsoCode = {
   ),
   IsoCode.GM: PhoneMetadataLengths(
     general: [],
-    mobile: [7],
-    fixedLine: [7],
+    mobile: [7, 9],
+    fixedLine: [7, 9],
     voip: [],
   ),
   IsoCode.GN: PhoneMetadataLengths(
@@ -1469,7 +1469,7 @@ const metadataLenghtsByIsoCode = {
   IsoCode.ZW: PhoneMetadataLengths(
     general: [],
     mobile: [9],
-    fixedLine: [5, 6, 7, 8, 9, 10],
+    fixedLine: [7, 9],
     voip: [10],
   ),
 };
